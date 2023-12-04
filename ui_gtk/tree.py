@@ -3,7 +3,7 @@ import json
 
 store = Gtk.TreeStore(str)
 
-with open('data.json') as f:
+with open('ui_gtk/data.json') as f:
     des = json.load(f)
     their_parent = store.append(None, [list(des.items())[0][0]])
     virus = des['Вирусы']
